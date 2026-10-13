@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda — Game / Drop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">GJ</span>
+      <span class="logo-text">Juegos GJS</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html" class="active">Tienda</a>
+      <a href="#">Cómo instalar</a>
+      <a href="#">Carrito</a>
+    </div>
+    <a href="tienda.html" class="btn btn-nav">Explorar tienda</a>
+  </nav>
+
+  <main class="container shop">
+
+    <h1 class="page-title">Tienda</h1>
+    <p class="page-subtitle">Encuentra tus juegos favoritos a mejor precio.</p>
+
+    <input type="text" class="search" placeholder="Buscar juegos...">
+
+    <div class="shop-layout">
+
+      <aside class="filters">
+        <div class="box">
+          <h3>¿DÓNDE JUEGAS?</h3>
+          <select>
+            <option>All</option>
+            <option>Móvil</option>
+            <option>Consola</option>
+            <option>PC</option>
+          </select>
+        </div>
+        <div class="box">
+          <h3>GÉNEROS</h3>
+          <p>Acción · Deportes · Supervivencia · Aventura · Estrategia</p>
+        </div>
+      </aside>
+
+      <div class="game-grid shop-grid">
+        <a href="juego-pubg-mobile.html" class="game">
+          <img src="img/pubg.png" alt="PUBG Mobile">
+          <h3>PUBG MOBILE</h3>
+          <p>Gratis</p>
+        </a>
+        <a href="#" class="game">
+          <img src="img/fc27.png" alt="EA Sports FC 27">
+          <h3>EA SPORTS FC 27</h3>
+          <p>80€</p>
+        </a>
+        <a href="#" class="game">
+          <img src="img/mobile-legends.png" alt="Mobile Legends: Bang Bang">
+          <h3>Mobile Legends: Bang Bang</h3>
+          <p>Gratis</p>
+        </a>
+        <a href="#" class="game">
+          <img src="img/valheim.png" alt="Valheim">
+          <h3>Valheim</h3>
+          <p>30€</p>
+        </a>
+        <a href="#" class="game">
+          <img src="img/accion.png" alt="Marvel Rivals">
+          <h3>Marvel Rivals</h3>
+          <p>Gratis</p>
+        </a>
+        <a href="#" class="game">
+          <img src="img/minecraft.png" alt="Minecraft: Java & Bedrock Edition">
+          <h3>Minecraft: Java &amp; Bedrock Edition</h3>
+          <p>10€</p>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
