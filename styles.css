@@ -636,3 +636,20 @@ body {
   border-radius: 999px;
   padding-left: 20px;
 }
+
+.footer {
+  padding: 24px 36px;
+  background: #24233b;
+  color: #cfcde8;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer .license {
+  margin-top: 8px;
+}
+
+.footer a {
+  text-decoration: underline;
+}
