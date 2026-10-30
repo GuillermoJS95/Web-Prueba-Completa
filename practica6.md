@@ -24,7 +24,7 @@
 
 ### Elección para esta web
 
-- **Audio: MP3 (o AAC)** por compatibilidad universal y buen equilibrio peso/calidad; para música ambiental en bucle un archivo de ~1-2 MB a 128 kbps basta. La música es «Yoiyami Core Theme – Deep Blue Ambient Piano» (CC0, OpenGameArt), un piano ambiental tranquilo, recomprimido a MP3 de 96 kbps (3:55 min, 2,7 MB). Se controla con un botón de altavoz en la barra de navegación.
+- **Audio: MP3 (o AAC)** por compatibilidad universal y buen equilibrio peso/calidad; para música ambiental en bucle un archivo de ~1-2 MB a 128 kbps basta. La música es «Welcome to the Green Room» de Toby Fox (Deltarune), aportada por el autor de la web, recomprimida a MP3 de 128 kbps (1:30 min, 1,4 MB). Es música con derechos de autor, usada aquí solo con fines educativos. Se controla con un botón de altavoz en la barra de navegación.
 - **Vídeo: MP4 (H.264) con WebM (VP9) como alternativa**, declarados con varios `<source>`: el navegador usa el primero que soporte. H.264 garantiza reproducción en cualquier dispositivo y VP9 reduce peso donde se soporte.
 
 ## 2. Audio y vídeo en la web
@@ -42,7 +42,7 @@ Ver `index.html`: el vídeo es la introducción, justo debajo de la barra de nav
 </audio>
 ```
 
-El vídeo (28 s, 1920×1080) se montó con un script de Python a partir de capturas reales de la propia web (Chrome headless): recorre inicio, tienda y ficha de juego, muestra la versión móvil y cierra con una llamada a la acción. Exportado a MP4 (H.264, 3,7 MB) y WebM (VP9, 5,5 MB). Va sin sonido y se reproduce solo, en bucle.
+El vídeo (23,5 s, 1280×720, 30 fps) se programó con Python (Pillow + NumPy + ffmpeg) a partir de las portadas y capturas reales de la web (Chrome headless). Incluye tipografía cinética sincronizada con el ritmo, un carrusel 3D con perspectiva y reflejos sobre suelo neón, un túnel de portadas, los paneles de la web flotando en 3D y efectos de postproducción (aberración cromática, glitch, bloom, viñeta y grano). Exportado a MP4 (H.264, 4,7 MB) y WebM (VP9, 6,2 MB). Va sin sonido, se reproduce solo y en bucle.
 
 ## 3. Diseño responsive (`styles.css`)
 
