@@ -1,0 +1,22 @@
+# Entrega de la práctica y material de trabajo (no forman parte de la web)
+entrega/
+recursos-originales/
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores y herramientas
+.vscode/
+.idea/
+.claude/
+
+# Python (scripts auxiliares)
+__pycache__/
+*.pyc
+
+# Temporales
+*.tmp
+*.log
+*.bak

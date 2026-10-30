@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=6">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="img/logo.svg" type="image/svg+xml">
 </head>
@@ -40,10 +40,10 @@
 
 
   <section class="intro-video">
+    <canvas class="intro-ambient" width="64" height="36" aria-hidden="true"></canvas>
     <video controls autoplay muted loop playsinline preload="auto" poster="img/hero.jpg" aria-label="Vídeo de presentación de Juegos GJS">
       <source src="media/presentacion.mp4" type="video/mp4">
       <source src="media/presentacion.webm" type="video/webm">
-      Tu navegador no soporta vídeo HTML5.
     </video>
   </section>
 
@@ -149,5 +149,6 @@
   </footer>
 
   <script src="music.js"></script>
+  <script src="ambient.js"></script>
 </body>
 </html>
