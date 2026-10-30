@@ -24,17 +24,17 @@
 
 ### Elección para esta web
 
-- **Audio: MP3 (o AAC)** por compatibilidad universal y buen equilibrio peso/calidad; para música ambiental en bucle un archivo de ~1-2 MB a 128 kbps basta. La música es «Heroic Loop» de Zane Little Music (CC0, OpenGameArt), recomprimida a MP3 de 128 kbps (de 2,6 MB a 1 MB). Se controla con un botón de altavoz en la barra de navegación.
+- **Audio: MP3 (o AAC)** por compatibilidad universal y buen equilibrio peso/calidad; para música ambiental en bucle un archivo de ~1-2 MB a 128 kbps basta. La música es «Yoiyami Core Theme – Deep Blue Ambient Piano» (CC0, OpenGameArt), un piano ambiental tranquilo, recomprimido a MP3 de 96 kbps (3:55 min, 2,7 MB). Se controla con un botón de altavoz en la barra de navegación.
 - **Vídeo: MP4 (H.264) con WebM (VP9) como alternativa**, declarados con varios `<source>`: el navegador usa el primero que soporte. H.264 garantiza reproducción en cualquier dispositivo y VP9 reduce peso donde se soporte.
 
 ## 2. Audio y vídeo en la web
 
-Ver `index.html`, sección «Mira y escucha»:
+Ver `index.html`: el vídeo es la introducción, justo debajo de la barra de navegación, y el botón de música está en la barra:
 
 ```html
-<video controls preload="metadata" poster="img/hero.jpg">
-  <source src="media/presentacion.webm" type="video/webm">
+<video controls autoplay muted loop playsinline poster="img/hero.jpg">
   <source src="media/presentacion.mp4" type="video/mp4">
+  <source src="media/presentacion.webm" type="video/webm">
 </video>
 
 <audio id="bg-music" loop preload="none">
@@ -42,7 +42,7 @@ Ver `index.html`, sección «Mira y escucha»:
 </audio>
 ```
 
-El vídeo (19 s, 1280×720) está generado con un script de Python a partir de las imágenes de la propia web, y exportado a MP4 (H.264, 0,75 MB) y WebM (VP9, 0,86 MB).
+El vídeo (28 s, 1920×1080) se montó con un script de Python a partir de capturas reales de la propia web (Chrome headless): recorre inicio, tienda y ficha de juego, muestra la versión móvil y cierra con una llamada a la acción. Exportado a MP4 (H.264, 3,7 MB) y WebM (VP9, 5,5 MB). Va sin sonido y se reproduce solo, en bucle.
 
 ## 3. Diseño responsive (`styles.css`)
 
